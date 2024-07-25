@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(254, 255, 255);
+}
+
+header {
+    padding: 30px;
+    background-color: paleturquoise;
+    color: rgb(1, 73, 66);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: paleturquoise;
+    color: rgb(1, 73, 66);
+}
