@@ -19,3 +19,27 @@ footer {
     background-color: paleturquoise;
     color: rgb(1, 73, 66);
 }
+
+/* Filters */
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.filter-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Articles */
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding: 30px;
+}
+.article {
+    padding: 10px;
+    border-right: 1px solid black;  
+}
