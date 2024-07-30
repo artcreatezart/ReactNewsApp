@@ -19,24 +19,24 @@ const AboutMe = () => {
       <div className='about-bottom-container'>
         
         <div className='about-mockup-img mockup-fnaf'>
-          <p>SOLO</p>
-          <p>FNAF</p>
+          <p>Solo Project</p>
+          <p>Film Website Adervertising new Five Night's at Freddy's Movie</p>
         </div>
         <div className='about-mockup-img mockup-loft'>
-          <p>SOLO</p>
-          <p>LOTF</p>
+          <p>Solo Project</p>
+          <p>Tablet Ordering system for Lord of the Fries to be used at their locations</p>
         </div>
         <div className='about-mockup-img mockup-accom'>
-          <p>ACCOM</p>
+          <p>Accomadation App users can filter through and view nearby zoo and wildlife parks</p>
         </div>
         <div className='about-mockup-img mockup-splish'> 
-        <p>*Welly Splish Splash Team Project: Abbie, Briony, Isabella, Caitlyn</p>         
-          <p>SPLISH SPLASH</p>
+          <p>*Team Project: Abbie, Briony, Isabella, Caitlyn</p>         
+          <p>Welly Splish 'n' Splash app from Council to promote local pools to teens and young adults</p>
         </div>
 
         <div className='about-mockup-img mockup-konjo'> 
-        <p>*Welly Splish Splash Team Project: Abbie, Sheldon, Abyssinia</p>         
-          <p>SPLISH SPLASH</p>
+        <p>*Team Project: Abbie, Sheldon, Abyssinia</p>         
+          <p>Konjo a Cafe app for users to order their coffee's on the go and being able to create presets for group coffees</p>
         </div>
 
       </div>
