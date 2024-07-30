@@ -9,9 +9,9 @@ const App = () => {
 
   return (
     <HashRouter>
-    <Header/>
-    <Links/>
-    <Footer/>
+      <Header/>
+      <Links/>
+      <Footer/>
     </HashRouter>
   )
 

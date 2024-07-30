@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { useArticlesContext } from '../hooks/useArticlesContext';
 
 // API KEY
@@ -12,9 +13,11 @@ const Home = () => {
   const [category, setCategory] = useState('');
   // State for loading
   const [loading, setLoading] = useState(true)
+  // Initate useNavigate
+  const navigate = useNavigate()
 
-    // Bring in state and dispatch
-    const {articles, dispatch} = useArticlesContext()
+  // Bring in state and dispatch
+  const {articles, dispatch} = useArticlesContext()
 
   // Annonoymous arrow function same as above but doesnt have a name
   useEffect(() => {
@@ -53,6 +56,11 @@ const Home = () => {
     setCategory(newCategory)
   }
 
+  const handleReadMoreClick = (index) => {
+    console.log(index);
+    navigate(`/article/${index}`)
+  }
+
   // mapped articles component
   const Articles = ({articles}) => {
     const mappedArticles = articles.map((article, index) => {
@@ -60,6 +68,7 @@ const Home = () => {
         <div key={index} className='article'>
           <h2>{article.title}</h2>
           <p>{article.description}</p>
+          <button onClick={() => handleReadMoreClick(index)}>Read More</button>
         </div>
       )
     })
@@ -93,7 +102,7 @@ const Home = () => {
           <label htmlFor="categorySelect">Category:</label>
           <select name="categorySelect" id="categorySelect" onChange={handleCategoryChange}>
             <option value="">All</option>
-            <option value="buisness">Business</option>
+            <option value="business">Business</option>
             <option value="entertainment">Entertainment</option>
             <option value="health">Health</option>
             <option value="science">Science</option>
